@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" ,sans-serif ;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(141, 36, 36)rgb(141, 36, 36));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .logo{
+    width:  80px;
+}
+nav ul li{
+    
+ 
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    font-style:bold;{
+        list-style: none;
+    }
+ 
+
+} 
+nav li a{
+text-decoration: none;
+font-weight: bold;
+color: rgb(126, 118, 118);
+border:rgba(255, 255, 255, 0.842) 2px solid;
+border-radius: 11px;
+padding: 5px;
+transition: 0.6s;
+}
+nav li a:hover{
+    background-color: rgba(194, 191, 194, 0.842);
+   
+}
+nav li a:active{
+    background-color: rgb(247, 217, 178);
+    border-color:  rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+}
+.content{
+    text-align: center;
+
+    
+  
+}
+
+.content h1{
+ 
+    font-size: 160px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.content h1:hover{
+    -webkit-text-stroke:  2px #fff;
+    color: transparent;
+}
+.content a{ 
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255) ;
+    font-size: 24px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 1s;
+    font-weight: bold;
+}
+.content a:hover{
+    background-color: white;
+    color:grey;
+}
+.content a:active{
+    background-color: rgb(247, 217, 178);
+}
+.bank-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    .bank-video{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media(max-aspect-ratio: 6/9){
+    .bank-video{
+        width: auto;
+        height: 100%;
+    }
+    
+} 
